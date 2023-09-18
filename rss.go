@@ -21,7 +21,7 @@ type RSSItem struct {
 	Title       string `xml:"title"`
 	Link        string `xml:"link"`
 	Description string `xml:"description"`
-	PuDate      string `xml:"pubDate"`
+	PubDate      string `xml:"pubDate"`
 }
 
 func urltoFeed(url string) (RSSFeed, error) {
