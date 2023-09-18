@@ -29,7 +29,7 @@ func (apiCfg *apiConfig) handlerCreateFeed(w http.ResponseWriter, r *http.Reques
 		CreatedAt: time.Now().UTC(),
 		UpdatedAt: time.Now().UTC(),
 		Name: params.Name,
-		Url: "",
+		Url: params.URL,
 		UserID: user.ID,
 	})
 	if err != nil {
